@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 6. Write a program to take input the marks obtained in three
+//     subjects & total marks. Compute & show the resulting
+//     percentage on your page. Take percentage & compute
+//     grade as per following table:
+
+
+let obtain=+prompt("Enter obtained marks ")
+, 
+total=300 ,percentage;
+ 
+percentage=(obtain/total)*100;
+document.write(""+obtain+" <br>");
+document.write(""+total+" <br>");
+
+if(percentage>=80){
+    document.write("Grade A+ <br>")
+document.write("Remarks: Excellent <br>")
+}
+else if(percentage>=70){
+    document.write("Grade: A <br>")
+document.write("Remarks: Good <br>")
+}
+
+
+else if(percentage>=60){
+    document.write("Grade: b <br>")
+document.write("Remarks: you need to improve <br>")
+}
+else if(percentage<60){
+    document.write("Grade: Fail <br>")
+document.write("Remarks: Sorry <br>")
+}
+
+else{
+    document.write("try again")
+}
+
+
+
+
+
+
+document.write("Percentage ="+percentage+"%");
+
+
+
+
+
+    </script>
+</body>
+</html>
